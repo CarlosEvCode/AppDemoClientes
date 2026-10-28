@@ -1,0 +1,57 @@
+# =========================
+# .NET / Visual Studio
+# =========================
+
+# Resultados de compilación
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.rsuser
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Pruebas / cobertura
+[Tt]est[Rr]esult*/
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# Archivos generados de MSBuild
+*.cache
+*.tmp
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Publicación
+[Pp]ublish/
+*.pubxml
+*.publishproj
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secretos / configuración local
+*.local.json
+appsettings.*.local.json
+.env
