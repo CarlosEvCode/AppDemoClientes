@@ -27,7 +27,7 @@ namespace DAL
         }
         public async Task ActualizarAsync(Cliente cliente, CancellationToken ct = default)
         {
-            using var resp = await _http.PutAsJsonAsync($"{RUTA}/{cliente.Id}", ct);
+            using var resp = await _http.PutAsJsonAsync($"{RUTA}/{cliente.Id}", cliente, ct);
             await AsegurarExitoAsync(resp, ct);
         }
 
