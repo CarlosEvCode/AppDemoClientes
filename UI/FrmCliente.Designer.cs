@@ -58,6 +58,7 @@
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // label1
             // 
@@ -70,11 +71,20 @@
             // 
             // grid
             // 
+            grid.AllowUserToAddRows = false;
+            grid.AllowUserToDeleteRows = false;
+            grid.AllowUserToOrderColumns = true;
+            grid.AllowUserToResizeColumns = false;
+            grid.AllowUserToResizeRows = false;
+            grid.BackgroundColor = Color.White;
             grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grid.Location = new Point(41, 62);
+            grid.MultiSelect = false;
             grid.Name = "grid";
+            grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grid.Size = new Size(914, 308);
             grid.TabIndex = 18;
+            grid.SelectionChanged += grid_SelectionChanged;
             // 
             // label2
             // 
@@ -133,20 +143,25 @@
             // txtApellidos
             // 
             txtApellidos.Location = new Point(68, 436);
+            txtApellidos.MaxLength = 50;
             txtApellidos.Name = "txtApellidos";
             txtApellidos.Size = new Size(186, 25);
             txtApellidos.TabIndex = 4;
+            txtApellidos.Enter += txtApellidos_Enter;
             // 
             // txtDni
             // 
             txtDni.Location = new Point(68, 489);
+            txtDni.MaxLength = 8;
             txtDni.Name = "txtDni";
             txtDni.Size = new Size(186, 25);
             txtDni.TabIndex = 10;
+            txtDni.KeyPress += txtDni_KeyPress;
             // 
             // txtNombres
             // 
             txtNombres.Location = new Point(277, 436);
+            txtNombres.MaxLength = 50;
             txtNombres.Name = "txtNombres";
             txtNombres.Size = new Size(186, 25);
             txtNombres.TabIndex = 6;
@@ -154,13 +169,16 @@
             // txtTelefono
             // 
             txtTelefono.Location = new Point(277, 489);
+            txtTelefono.MaxLength = 9;
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(186, 25);
             txtTelefono.TabIndex = 12;
+            txtTelefono.KeyPress += txtTelefono_KeyPress;
             // 
             // txtCorreo
             // 
             txtCorreo.Location = new Point(481, 436);
+            txtCorreo.MaxLength = 150;
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(186, 25);
             txtCorreo.TabIndex = 8;
@@ -168,6 +186,7 @@
             // txtDireccion
             // 
             txtDireccion.Location = new Point(481, 489);
+            txtDireccion.MaxLength = 150;
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(186, 25);
             txtDireccion.TabIndex = 14;
@@ -176,8 +195,10 @@
             // 
             txtBuscar.Location = new Point(86, 9);
             txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = "Apellidos, nombres, DNI";
             txtBuscar.Size = new Size(340, 25);
             txtBuscar.TabIndex = 1;
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
             // 
             // btnNuevo
             // 
@@ -206,6 +227,7 @@
             btnEliminar.TabIndex = 17;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // FrmCliente
             // 
@@ -234,6 +256,7 @@
             Font = new Font("Segoe UI", 10F);
             Name = "FrmCliente";
             Text = "FrmCliente";
+            Load += FrmCliente_Load;
             ((System.ComponentModel.ISupportInitialize)grid).EndInit();
             ResumeLayout(false);
             PerformLayout();
