@@ -1,0 +1,273 @@
+namespace UI
+{
+    partial class FrmProveedor
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            btnBuscar = new Button();
+            label1 = new Label();
+            grid = new DataGridView();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            txtRazonSocial = new TextBox();
+            txtRuc = new TextBox();
+            txtTelefono = new TextBox();
+            txtDireccion = new TextBox();
+            txtCorreo = new TextBox();
+            txtBuscar = new TextBox();
+            btnNuevo = new Button();
+            btnGuardar = new Button();
+            btnEliminar = new Button();
+            ((System.ComponentModel.ISupportInitialize)grid).BeginInit();
+            SuspendLayout();
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(442, 12);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(100, 30);
+            btnBuscar.TabIndex = 2;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(28, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(52, 19);
+            label1.TabIndex = 0;
+            label1.Text = "Buscar:";
+            // 
+            // grid
+            // 
+            grid.AllowUserToAddRows = false;
+            grid.AllowUserToDeleteRows = false;
+            grid.AllowUserToOrderColumns = true;
+            grid.AllowUserToResizeColumns = false;
+            grid.AllowUserToResizeRows = false;
+            grid.BackgroundColor = Color.White;
+            grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grid.Location = new Point(41, 62);
+            grid.MultiSelect = false;
+            grid.Name = "grid";
+            grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            grid.Size = new Size(914, 308);
+            grid.TabIndex = 18;
+            grid.SelectionChanged += grid_SelectionChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(61, 408);
+            label2.Name = "label2";
+            label2.Size = new Size(90, 19);
+            label2.TabIndex = 3;
+            label2.Text = "Razón Social:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(281, 402);
+            label3.Name = "label3";
+            label3.Size = new Size(36, 19);
+            label3.TabIndex = 5;
+            label3.Text = "RUC:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(472, 404);
+            label6.Name = "label6";
+            label6.Size = new Size(63, 19);
+            label6.TabIndex = 7;
+            label6.Text = "Teléfono:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(57, 467);
+            label4.Name = "label4";
+            label4.Size = new Size(68, 19);
+            label4.TabIndex = 9;
+            label4.Text = "Dirección:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(277, 468);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 19);
+            label5.TabIndex = 11;
+            label5.Text = "Correo:";
+            // 
+            // txtRazonSocial
+            // 
+            txtRazonSocial.Location = new Point(68, 436);
+            txtRazonSocial.MaxLength = 100;
+            txtRazonSocial.Name = "txtRazonSocial";
+            txtRazonSocial.Size = new Size(186, 25);
+            txtRazonSocial.TabIndex = 4;
+            txtRazonSocial.Enter += TextBox_Enter;
+            txtRazonSocial.Leave += TextBox_Leave;
+            // 
+            // txtRuc
+            // 
+            txtRuc.Location = new Point(277, 436);
+            txtRuc.MaxLength = 11;
+            txtRuc.Name = "txtRuc";
+            txtRuc.Size = new Size(186, 25);
+            txtRuc.TabIndex = 6;
+            txtRuc.Enter += TextBox_Enter;
+            txtRuc.Leave += TextBox_Leave;
+            txtRuc.KeyPress += txtRuc_KeyPress;
+            // 
+            // txtTelefono
+            // 
+            txtTelefono.Location = new Point(481, 436);
+            txtTelefono.MaxLength = 9;
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(186, 25);
+            txtTelefono.TabIndex = 8;
+            txtTelefono.Enter += TextBox_Enter;
+            txtTelefono.Leave += TextBox_Leave;
+            txtTelefono.KeyPress += txtTelefono_KeyPress;
+            // 
+            // txtDireccion
+            // 
+            txtDireccion.Location = new Point(68, 489);
+            txtDireccion.MaxLength = 150;
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(186, 25);
+            txtDireccion.TabIndex = 10;
+            txtDireccion.Enter += TextBox_Enter;
+            txtDireccion.Leave += TextBox_Leave;
+            // 
+            // txtCorreo
+            // 
+            txtCorreo.Location = new Point(277, 489);
+            txtCorreo.MaxLength = 150;
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(390, 25);
+            txtCorreo.TabIndex = 12;
+            txtCorreo.Enter += TextBox_Enter;
+            txtCorreo.Leave += TextBox_Leave;
+            // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(86, 9);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = "Razón social, RUC, correo";
+            txtBuscar.Size = new Size(340, 25);
+            txtBuscar.TabIndex = 1;
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
+            // 
+            // btnNuevo
+            // 
+            btnNuevo.Location = new Point(77, 538);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(94, 34);
+            btnNuevo.TabIndex = 15;
+            btnNuevo.Text = "Nuevo";
+            btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Location = new Point(288, 538);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(94, 34);
+            btnGuardar.TabIndex = 16;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(477, 538);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(94, 34);
+            btnEliminar.TabIndex = 17;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // FrmProveedor
+            // 
+            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(984, 611);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnGuardar);
+            Controls.Add(btnNuevo);
+            Controls.Add(txtBuscar);
+            Controls.Add(txtCorreo);
+            Controls.Add(txtDireccion);
+            Controls.Add(txtTelefono);
+            Controls.Add(txtRuc);
+            Controls.Add(txtRazonSocial);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label6);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(grid);
+            Controls.Add(label1);
+            Controls.Add(btnBuscar);
+            Font = new Font("Segoe UI", 10F);
+            Name = "FrmProveedor";
+            Text = "Proveedores";
+            ((System.ComponentModel.ISupportInitialize)grid).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Button btnBuscar;
+        private Label label1;
+        private DataGridView grid;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private TextBox txtRazonSocial;
+        private TextBox txtRuc;
+        private TextBox txtTelefono;
+        private TextBox txtDireccion;
+        private TextBox txtCorreo;
+        private TextBox txtBuscar;
+        private Button btnNuevo;
+        private Button btnGuardar;
+        private Button btnEliminar;
+    }
+}

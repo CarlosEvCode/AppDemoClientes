@@ -21,9 +21,14 @@ namespace UI
                 Timeout = TimeSpan.FromSeconds(15)
             };
 
-            var dal = new ClienteDal(http);
-            var bol = new ClienteBol(dal);
-            Application.Run(new FrmCliente(bol));
+            //Un solo HttpClient para todos los DAL
+            var clienteDal = new ClienteDal(http);
+            var proveedorDal = new ProveedorDal(http);
+
+            var clienteBol = new ClienteBol(clienteDal);
+            var proveedorBol = new ProveedorBol(proveedorDal);
+
+            Application.Run(new FrmMain(clienteBol, proveedorBol));
         }
     }
 }
